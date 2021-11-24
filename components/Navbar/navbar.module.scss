@@ -1,0 +1,114 @@
+@import "../../styles/variables/colors";
+
+.nav-container {
+  height: 70px;
+  width: 90%;
+  margin: 10px auto;
+  border-bottom: 1px solid #4d618e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my {
+  font-size: 22px;
+  color: $white;
+  font-weight: 600;
+}
+
+.jobs {
+  font-size: 20px;
+  color: $primaryBlue;
+  font-weight: 600;
+}
+
+.border {
+  height: 1px;
+  width: 100%;
+}
+
+.loggedInUserWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.applied-jobs {
+  color: $white;
+  font-size: 16px;
+}
+
+.loggedInUser {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #d9efff;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.drop-icon {
+  color: white;
+  margin: 10px 0 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+
+.logout::after {
+  content: "Logout";
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logout-wrapper {
+  position: relative;
+}
+
+.logout {
+  background-color: white;
+  top: 35px;
+  position: absolute;
+  right: -10px;
+  width: 100px;
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 3px;
+  animation: toggle 0.5s;
+  cursor: pointer;
+}
+
+.active-link {
+  border-bottom: 3px solid $primaryBlue;
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+
+@keyframes toggle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .nav-container {
+    max-width: 1320px;
+  }
+}

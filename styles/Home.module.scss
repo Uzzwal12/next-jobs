@@ -1,0 +1,181 @@
+
+@import "./variables/colors";
+
+.home-container {
+  display: flex;
+  width: 90%;
+  margin: 40px auto;
+  flex-direction: column;
+}
+
+// .main {
+//   min-height: 100vh;
+//   padding: 4rem 0;
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.column-2 {
+  display: flex;
+}
+
+.welcome-text {
+  color: $white;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.my-text {
+  color: $white;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.jobs-text {
+  color: $primaryBlue;
+  font-weight: 600;
+}
+
+.image-main {
+  height: 390px;
+  max-width: 620px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.why-us-section {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 80px auto;
+}
+
+.sec-title {
+  color: $primaryDark;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+}
+
+.section-box {
+  padding: 20px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0px 3px 6px #557da526;
+  border-radius: 5px;
+}
+
+.section-box-title {
+  color: $primaryBlue;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.margin {
+  margin: 0 30px 0 0;
+}
+
+.companies-section {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.company-img {
+  width: 100%;
+}
+
+.background-wrapper {
+  position: absolute;
+  background-color: $primaryDark;
+  width: 100%;
+  min-height: 464px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1920px) {
+  .home-container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    width: 100%;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .column-1 {
+    margin-bottom: 50px;
+    margin-left: 80px;
+  }
+  .primary-btn {
+    margin-top: 15px;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec-title {
+    text-align: center;
+  }
+  .margin {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-us-section {
+    width: 90%;
+  }
+  .image-main {
+    height: 350px;
+    margin-top: 20px;
+  }
+  .company-img {
+    height: 110px;
+  }
+  .companies-section {
+    width: 95%;
+  }
+  .column-1 {
+    margin-bottom: 50px;
+    margin-left: 0;
+    align-items: center;
+  }
+  .welcome-text {
+    font-size: 50px;
+    text-align: center;
+  }
+  .my-text {
+    font-size: 50px;
+  }
+}
+
