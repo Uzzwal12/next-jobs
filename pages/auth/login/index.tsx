@@ -62,7 +62,7 @@ const Login = () => {
             </div>
             <p className={styles["new-here"]}>
               New to MyJobs?
-              <Link href="/signUp">
+              <Link href="/auth/signup">
                 <a className={styles["createAccount"]}>Create an account</a>
               </Link>
             </p>

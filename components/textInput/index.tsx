@@ -5,7 +5,7 @@ export interface ITextInput {
   name: string;
   value: string;
   placeholder: string;
-  onChange?: () => void;
+  onChange?: (e: any) => void;
   type: string;
   minLength?: number | undefined;
 }

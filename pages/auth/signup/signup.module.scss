@@ -1,0 +1,199 @@
+@import "../../../styles/variables/colors";
+
+.signUpContainer {
+  overflow: hidden;
+}
+
+.background-wrapper-auth-height{
+    position: absolute;
+    background-color: $primaryDark;
+    width: 100%;
+    min-height: 362px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+.signUpBox {
+  display: flex;
+  justify-content: space-evenly;
+  height: 710px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 560px;
+  flex-direction: column;
+  border: 1px solid #557da526;
+  border-radius: 20px;
+  background-color: $white;
+  box-shadow: 0px 10px 20px 0px #557da526;
+  padding: 0 20px;
+}
+
+.signUp {
+  color: $primaryDark;
+  font-size: 22px;
+  font-weight: bold;
+}
+.userLabel {
+  color: $primaryDark;
+  font-size: 14px;
+}
+.recruiter {
+  height: 45px;
+  width: 135px;
+  margin-right: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid $greyc6;
+}
+
+.recruiter-icon {
+  color: $primaryBlue;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.active {
+  background-color: $primaryBlue;
+  color: $white;
+  border: 1px solid $primaryBlue;
+}
+
+.active i {
+  color: $white;
+}
+
+.candidate {
+  height: 45px;
+  width: 135px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid $greyc6;
+}
+
+.candidate-icon {
+  color: $primaryBlue;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.signUpLabels {
+  color: $primaryDark;
+  font-size: 14px;
+  height: 14px;
+}
+
+.name-wrapper {
+  height: 50px;
+  margin: 10px 0;
+}
+.email-wrapper {
+  height: 50px;
+  margin: 10px 0;
+}
+.skills-wrapper {
+  margin: 10px 0;
+}
+.passwordLabel {
+  color: $primaryDark;
+  font-size: 14px;
+  height: 14px;
+}
+
+.userContainer {
+  width: 500px;
+  display: flex;
+}
+
+.passwordContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.createPassword {
+  width: 48%;
+}
+.confirmPassword {
+  width: 48%;
+}
+
+.signUpButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpButton {
+  width: 150px;
+  height: 45px;
+  color: $white;
+  background-color: $primaryBlue;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.have-account {
+  text-align: center;
+  font-size: 16px;
+}
+
+.logintext {
+  color: $primaryBlue;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.signUpErrors {
+  text-align: right;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+@media screen and (max-width: "480px") {
+  .passwordContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .createPassword {
+    width: 100%;
+  }
+  .confirmPassword {
+    width: 100%;
+  }
+  .createPasswordInput {
+    margin: 10px auto;
+  }
+  .confirmPasswordInput {
+    margin: 10px auto 0 auto;
+  }
+  .email-wrapper {
+    height: 50px;
+    margin-top: 10px;
+  }
+  .passwordContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px auto;
+    height: 135px;
+  }
+}
+
+@media screen and (max-width: "380px") {
+  .userContainer {
+    flex-direction: column;
+  }
+  .recruiter {
+    margin: 10px 0;
+  }
+}
