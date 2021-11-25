@@ -1,6 +1,6 @@
-import axiosInstance from "../axiosInstance";
+import axiosInstance from "../../axiosInstance";
 
-export const register = async (data) => {
+export const register = async (data: any) => {
   try {
     return await axiosInstance.post(`/auth/register`, data);
   } catch (error) {

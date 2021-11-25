@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import Cookies from "js-cookie";
 import Link from "next/link";
 import LoginSignupButton from "../LoginSignUpButton";
 import styles from "./navbar.module.scss";
 
 function Navbar() {
   const [showLogout, setShow] = useState(false);
+
+  // const userData = JSON.parse(Cookies.get("userData"))
+  //   console.log(userData)
 
   return (
     <nav className={styles["nav-container"]}>

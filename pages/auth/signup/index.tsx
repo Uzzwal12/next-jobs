@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Formik, ErrorMessage, Form } from "formik";
+import { Formik, Form } from "formik";
 import TextInput from "../../../components/textInput";
 import styles from "./signup.module.scss";
-import { register } from "../../../api/signup";
+import { register } from "../../../api/auth/signup";
 
 const SignUp = () => {
   const [backend, setBackendError] = useState(null);
   const [userRole, setuserRole] = useState(0);
 
   const router = useRouter();
-
-  console.log("backend", backend);
 
   return (
     <div className={styles["signUpContainer"]}>

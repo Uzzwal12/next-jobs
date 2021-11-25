@@ -1,0 +1,11 @@
+@import "../../styles/variables/colors";
+
+.background-wrapper {
+  position: absolute;
+  background-color: $primaryDark;
+  width: 100%;
+  min-height: 210px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
