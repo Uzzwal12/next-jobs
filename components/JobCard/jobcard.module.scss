@@ -1,0 +1,59 @@
+@import "../../styles/variables/colors";
+
+.job-box {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  box-shadow: 0px 3px 6px #557da526;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 20px 15px 0 0;
+  width: 100%;
+}
+
+.job-title {
+  font-size: 17px;
+}
+
+.job-desc {
+  font-size: 14px;
+  white-space: break-spaces;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 15px;
+  overflow-y: scroll;
+  max-height: 80px;
+  word-break: break-all;
+}
+
+.job-info-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.job-location {
+  font-size: 14px;
+  margin: auto 0;
+}
+
+.icon-location {
+  margin-right: 5px;
+  color: $primaryBlue !important;
+}
+
+.apply-btn {
+  height: 32px;
+  background-color: $primaryLight;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.apply-btn:focus {
+  outline: none;
+}

@@ -21,18 +21,18 @@ const Login = () => {
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
           login(values).then((res: any) => {
-            if (res.success) {
+            if (res?.data?.success) {
               Cookies.set(
                 "userData",
                 JSON.stringify({
-                  name: res.data.name,
-                  token: res.data.token,
-                  userRole: res.data.userRole,
+                  name: res.data.data.name,
+                  token: res.data.data.token,
+                  userRole: res.data.data.userRole,
                 })
               );
               router.push("/candidate");
             } else {
-              setError(res.data.message);
+              setError(res?.data?.message);
             }
           });
         }}

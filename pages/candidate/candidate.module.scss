@@ -9,3 +9,70 @@
   top: 0;
   z-index: -1;
 }
+
+.wrapper {
+  height: 100%;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.icon-wrapper {
+  cursor: pointer;
+}
+
+.icon-home {
+  color: $white;
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.home-text {
+  color: $white;
+  font-size: 12px;
+}
+
+.jobs-for-you {
+  color: $white;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.job-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+@media screen and(max-width: "1150px") {
+  .job-box-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and(max-width: "1024px") {
+  .job-box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and(max-width: "480px") {
+  .my {
+    font-size: 16px;
+  }
+  .loggedInUser {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .applied-jobs {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .jobs {
+    font-size: 16px;
+  }
+  .job-box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+  }
+}

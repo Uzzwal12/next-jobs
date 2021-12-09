@@ -1,14 +1,33 @@
 import React from "react";
 import cookie from "cookie";
 import { availableJobs } from "../../api/availableJobs";
+import Loader from "../../components/Loader"
+import JobCard from "../../components/JobCard";
 import styles from "./candidate.module.scss";
 
-function Candidate(props: any) {
-  console.log(props);
+function Candidate({jobs}: any) {
+  console.log(jobs);
   return (
     <div>
       <div className={styles["background-wrapper"]} />
-      <h1>Candidate</h1>
+      <div className={styles["wrapper"]}>
+        <div className={styles["icon-wrapper"]}>
+          <i className={styles["fas fa-home icon-home"]}></i>
+          <span className={styles["home-text"]}>Home</span>
+        </div>
+
+        <div className={styles["jobs-for-you"]}>Jobs for you</div>
+        <div>
+            <div className={styles["job-box-container"]}>
+              <JobCard
+                data={jobs.data}
+                // handleClick={handleClick}
+                btnText="Apply"
+              />
+            </div>
+          {/* <Paginate totalPages={totalPages} onPageChange={onPageChange} /> */}
+        </div>
+      </div>
     </div>
   );
 }
